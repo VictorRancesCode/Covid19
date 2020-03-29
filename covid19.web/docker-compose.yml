@@ -1,0 +1,27 @@
+version: "2"
+services:
+  database:
+    image: mdillon/postgis
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+  backend:
+    build: .
+    ports:
+      - 8000:8000
+    hostname: backend
+    links:
+      - database:database
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - "home:/home/app"
+      - ".:/app"
+      - "pyenv:/python"
+    environment:
+      DJANGO_DATABASE_HOST: database
+      DJANGO_DATABASE_USER: postgres
+      DJANGO_DATABASE_PASSWORD: postgres
+      DJANGO_DATABASE_NAME: covid_master
+volumes:
+  pyenv:
+  home:
