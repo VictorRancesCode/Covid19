@@ -3,7 +3,7 @@
 A new Flutter project.
 
 
-![Demo](https://github.com/VictorRancesCode/Covid19/tree/master/covid19/img/1.jpg) 
+![Demo](https://github.com/VictorRancesCode/Covid19/blob/master/covid19/img/1.jpg?raw=true) 
 
 ## Getting Started
 
