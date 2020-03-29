@@ -91,7 +91,7 @@ class _Home extends State<Home> {
                     ),
                     InkWell(
                       onTap: (){
-                        Navigator.of(context).pushNamed('/coronavirusMap');
+                        Navigator.of(context).pushNamed('/family');
                       },
                       child: Text(
                         "More >",
@@ -150,9 +150,9 @@ class _Home extends State<Home> {
               ),
               CardMenu(
                 onTap: (){
-                  Navigator.of(context).pushNamed('/notice');
+                  Navigator.of(context).pushNamed('/news');
                 },
-                title: 'Notices',
+                title: 'New',
                 subTitle: '',
                 image: NetworkImage(
                     'https://i0.pngocean.com/files/665/700/925/computer-icons-news-media-printing-advertising-news-ico.jpg'),

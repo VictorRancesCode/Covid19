@@ -14,7 +14,7 @@ class _Notice extends State<Notice> {
     // TODO: implement build
     return Scaffold(
       appBar: AppBar(
-        title: Text("Notices"),
+        title: Text("News"),
       ),
       body: Container(
         padding: EdgeInsets.all(10),

@@ -29,7 +29,7 @@ getPageRoute(RouteSettings settings){
       return MaterialPageRoute(builder: (_) => Family());
     case '/hospital':
       return MaterialPageRoute(builder: (_) => Hospital());
-    case '/notice':
+    case '/news':
       return MaterialPageRoute(builder: (_) => Notice());
     case '/testCovid':
       return MaterialPageRoute(builder: (_) => TestCovid());
